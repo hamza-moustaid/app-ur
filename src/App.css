@@ -1,32 +1,76 @@
-.App {
-  text-align: center;
+/* GLOBAL Style */
+body,html{
+  overflow-x: hidden;
+}
+*:hover{
+  transition: all .3s linear;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+/* Header Bloc */
+header{
+  width: 100%;
+  background-color: #31333B;
+  height: 42px;
+  padding: 5px;
+  position: relative;
+}
+header .logoHeader, footer .logoFooter{
+  float: left;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+header .navigation{
+  position: absolute;
+  vertical-align: middle;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .arrowLeft, header .arrowRight{
+  background-color: #4A4C54;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+header .arrowLeft:hover, header .arrowRight:hover{
+  background-color: #7c808d;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Footer Bloc */
+footer{
+  width: 100%;
+  background-color: #31333B;
+  height: 42px;
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
 }
-
-.App-link {
-  color: #61dafb;
+footer .voirProfil:hover{
+  background-color: #44474e;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer .voirProfil{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  right: 15px;
+  padding: 7px;
+  font-weight: bold;
+  cursor: pointer;
+}
+footer .voirProfil .iconFooterRight{
+  position: relative;
+  top:3px;
+}
+.content{
+  height: calc(100vh - 104px);
+  width: 100%;
+  background-color: #7c808d;
+}
+.col-1{
+  height: 33.33%;
+  background-color: red;
 }
